@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import Badge from 'react-bootstrap/Badge'
 import Modal from '../../Model';
@@ -7,10 +7,10 @@ import { useCartState } from './ContextReducer';
 export default function Navbar() {
   let data  = useCartState();
   const [cartView, setCartView] = useState(false);
-  const navigate = useNavigate();
+  const Navigate = useNavigate();
   const handleClick=()=>{
     localStorage.removeItem("authToken");
-    navigate("/Login");
+    Navigate("/Login");
   }
   return (
     <div>
@@ -24,12 +24,7 @@ export default function Navbar() {
             <li className="nav-item active">
               <Link className="nav-link active fs-5" to="/">Home</Link>
             </li>
-            {(localStorage.getItem("authToken")) ?
-              <li className="nav-item active">
-                <Link className="nav-link active fs-5" to="/myorder">My Orders</Link>
-              </li>
-
-              : ""}
+            
 
           </ul>
           {(!localStorage.getItem("authToken")) ?

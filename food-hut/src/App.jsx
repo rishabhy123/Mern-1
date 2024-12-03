@@ -6,7 +6,6 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import SignUp from "./screens/SignUp.jsx";
 import { CartProvider } from "./components/ContextReducer.jsx";
-import MyOrders from "./screens/MyOrders.jsx";
 function App() {
   
 
@@ -18,7 +17,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/CreateUser" element={<SignUp/>}/>
-      <Route path="/myorder" element={<MyOrders/>}/>
+
     </Routes>
    </div>
    </BrowserRouter>

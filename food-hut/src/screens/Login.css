@@ -1,0 +1,74 @@
+/* Login form container */
+#a {
+  max-width: 500px; /* Slightly increased form width */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin: 70px auto;
+  animation: fadeIn 0.5s;
+}
+
+/* Bold and black color for email and password labels */
+#d, #f {
+  font-weight: bold;
+  color: black;
+}
+
+/* Input styling */
+#b input {
+  border-radius: 8px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  width: 100%;
+  margin-top: 8px; /* Adds space between label and input */
+  margin-bottom: 20px; /* Space between input fields */
+  font-size: 1rem;
+  background-color: #f8f9fa; /* Light background for input fields */
+}
+
+/* Submit button styling */
+#g {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.1rem;
+}
+
+#g:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* "I am a new user" button styling */
+#h {
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  margin-top: 15px;
+}
+
+/* Adding background image */
+body {
+  background-image: url('../assets/login.jpg'); /* Replace with actual URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Animation for form fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

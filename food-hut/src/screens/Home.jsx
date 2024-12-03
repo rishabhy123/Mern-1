@@ -30,13 +30,13 @@ export default function Home() {
       <div> <div id="carouselExampleFade" className="carousel slide carousel-fade" >
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="https://source.unsplash.com/random/50?pizza" className="d-block w-100" style={{height:"80vh", objectFit:"cover"}} alt="https://source.unsplash.com/random/50?pizza"/>
+      <img src="https://plus.unsplash.com/premium_photo-1677000666761-ff476a65c8ba?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFzdGF8ZW58MHx8MHx8fDA%3D" className="d-block w-100" style={{height:"80vh", objectFit:"cover"}} alt="https://picsum.photos/3000?food"/>
     </div>
     <div className="carousel-item">
-      <img src="https://source.unsplash.com/random/50?burger" className="d-block w-100" style={{height:"80vh", objectFit:"cover"}} alt="https://source.unsplash.com/random/50?burger"/>
+      <img src="https://plus.unsplash.com/premium_photo-1677000666761-ff476a65c8ba?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFzdGF8ZW58MHx8MHx8fDA%3D" className="d-block w-100" style={{height:"80vh", objectFit:"cover"}} alt="https://picsum.photos/3000?food"/>
     </div>
     <div className="carousel-item">
-      <img src="https://source.unsplash.com/random/50?cake" className="d-block w-100" style={{height:"80vh", objectFit:"cover"}} alt="https://source.unsplash.com/random/50?cake"/>
+      <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emF8ZW58MHx8MHx8fDA%3D" className="d-block w-100" style={{height:"80vh", objectFit:"cover"}} alt="https://picsum.photos/3000?food"/>
     </div>
     <div className="carousel-caption d-none d-md-block" style={{zIndex:"10"}}>
     <div className="d-flex justify-content-center">
