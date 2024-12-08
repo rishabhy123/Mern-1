@@ -1,0 +1,218 @@
+/* Default styling for cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 320px; /* Limiting max width for uniformity */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure images fill the space while maintaining aspect ratio */
+  }
+  
+  .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures button stays at the bottom */
+    flex-grow: 1; /* Ensures the body takes up available space */
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .quantity-selector,
+  .size-selector {
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #28a745;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .price-display {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px; /* Ensures the button has space below */
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .card {
+      width: 48%; /* Adjust for tablets */
+      max-width: 48%;
+    }
+  
+    .quantity-selector,
+    .size-selector {
+      width: 48%;
+      margin: 5px 0;
+      display: inline-block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Full width for smaller devices */
+      max-width: 100%;
+    }
+  
+    .quantity-selector,
+    .size-selector {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .card-body {
+      padding: 10px;
+    }
+  
+    .add-to-cart-btn {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* Full width on mobile */
+      max-width: 100%;
+    }
+  
+    .quantity-selector,
+    .size-selector {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .add-to-cart-btn {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
+  /* Adjustments for width range: 825px to 1011px */
+@media (min-width: 825px) and (max-width: 1011px) {
+  .card {
+    width: 48%; /* Two cards per row for this range */
+    max-width: 48%;
+  }
+
+  .quantity-selector,
+  .size-selector {
+    width: 48%; /* Adjust selectors width */
+    margin: 5px;
+  }
+
+  .card-body {
+    padding: 12px; /* Slightly reduce padding */
+  }
+
+  .add-to-cart-btn {
+    font-size: 1.05rem; /* Slightly smaller font */
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.15rem; /* Adjust title size */
+  }
+
+  .card-text {
+    font-size: 0.95rem; /* Adjust text size */
+  }
+
+  .price-display {
+    font-size: 1.05rem; /* Adjust price display size */
+  }
+}
+/* Fix for cards in the range 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: space-evenly; /* Distribute cards evenly */
+    gap: 10px; /* Minimal gap between cards */
+    padding: 10px; /* Add padding to the container */
+  }
+
+  .card {
+    flex: 1 1 48%; /* Each card takes about 48% of the container width */
+    max-width: 510px; /* Prevent overflow by capping the width */
+    margin: 0; /* Remove any default margins */
+    border-radius: 10px; /* Rounded corners for a clean look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    overflow: hidden; /* Ensure content stays within the card */
+    height: auto; /* Let the card adjust height based on content */
+  }
+
+  .card-img-top {
+    width: 100%; /* Full width for the image */
+    height: 220px; /* Larger height for better visuals */
+    object-fit: cover; /* Maintain aspect ratio and fill space */
+  }
+
+  .card-body {
+    padding: 15px; /* Add padding inside the card */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space content evenly inside */
+    flex-grow: 1; /* Ensure the body stretches to fill space */
+  }
+
+  .quantity-selector,
+  .size-selector {
+    width: 100%; /* Full width for dropdowns */
+    margin: 5px 0; /* Spacing between dropdowns */
+  }
+
+  .add-to-cart-btn {
+    font-size: 1rem; /* Standard button font size */
+    padding: 10px; /* Add padding for clickability */
+    margin-top: 15px; /* Space above the button */
+    background-color: #28a745; /* Green button color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .add-to-cart-btn:hover {
+    background-color: #218838; /* Darker green for hover effect */
+  }
+}
+
